@@ -1,10 +1,11 @@
 .container {
     width: max-content;
-    margin: 0 auto;
+    margin-left: 315px;
     display: flex;
 }
 
-.interface{
+.interface {
+
     color: #e1e1e1;
     box-sizing: border-box;
     margin-right: 25px;
@@ -14,10 +15,9 @@
     background-color: #323232;
     box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.21);
 
-    &__input {
-        width: 350px;
-    }
     &__button {
+
+        margin: 15px 15px 15px 0;
         width: 110px;
         font-weight: bold;
 
