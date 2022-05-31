@@ -27,21 +27,6 @@ const initialState: InitialStateType = {
 
 let tasks: Array<ITask> = [];
 
-// async function POSTTasksRequest(tasks: Array<ITask>) {
-//     try {
-//         await fetch('https://626b1133e5274e6664c73703.mockapi.io/ToDoList_API/v1/Fetch_ToDoList', {
-//             method: 'POST',
-//             headers: { 'Content-Type': 'application/json' },
-//             body: JSON.stringify(tasks)
-//         })
-//             .then(response => response.json())
-//             .then(result => { console.log('POSTResult', result) })
-//     } catch (e: any) {
-//         console.error('errorMyLog', e)
-//         console.log('error2', 'does not work')
-//     }
-// }
-
 const taskSlice = createSlice({
     name: 'tasks',
     initialState,
@@ -116,7 +101,6 @@ const taskSlice = createSlice({
         [postTasks.fulfilled.type]: (state, action: PayloadAction<ImockAPIio>) => {
             state.postError = '';
             state.postSuccess = true;
-            console.log('post succeeded', action.payload)
         },
         [postTasks.rejected.type]: (state, action: PayloadAction<string>) => {
             state.postError = action.payload;
