@@ -1,5 +1,5 @@
 # React To Do List v2.3.
-Welcome to my web app. That's my sixth work. Project was written by using functional components. In this project mockapi.io was used as an emulation of requests to the server. env variables were loaded for educational purposes and do not contain any confidential data.
+Welcome to my web app. Project was written by using functional components. In this project mockapi.io was used as an emulation of requests to the server. env variables were loaded for educational purposes and do not contain any confidential data.
 
 ## Installation
 Firstly make sure that you have latest version of browser installed.
